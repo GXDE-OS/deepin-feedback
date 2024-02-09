@@ -1,0 +1,14 @@
+#!/bin/bash
+killall feedbackserver
+feedbackserver generating &
+if [ x$LANG = xzh_CN.UTF-8 ]
+then
+    gvfs-open "http://feedback.deepin.org/feedback?isapp=1&language=zh-cn"
+else
+    gvfs-open "http://feedback.deepin.org/feedback?isapp=1&language=en"
+fi
+result_tag="deepin-feedback-all-$(date "+%Y%m%d-%H%M%S")"
+output_path=${PWD}/${result_tag}.tar.gz
+pkexec deepin-feedback-cli -o ${output_path}
+killall feedbackserver
+feedbackserver ${result_tag}.tar.gz &
