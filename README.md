@@ -1,59 +1,18 @@
-# Deepin Feedback
+# GXDE Feedback
 
-**Description**: Easy to use issue or advice report tool for Deepin.
+**Description**: Easy to use issue or advice report tool for GXDE.
 
-Deepin Feedback will collect as much related information as possible
+GXDE Feedback will collect as much related information as possible
 according to the user specified category, include machine model,
 kernel version, syslog, configurations, etc. Then upload the report to
-Deepin's issue tracking site and that's it.
+GXDE's issue tracking site and that's it.
 
-Deepin Feedback also provide a command line tool named
+GXDE Feedback also provide a command line tool named
 `gxde-feedback-cli`, which in fact used as the information
 collecting back-end. For advanced usage, run it under the terminal.
 
 ## Dependencies
 
-### Build dependencies
-
-- [dde-go-dbus-factory](https://github.com/linuxdeepin/dbus-factory)
-- [deepin-gettext-tools](https://github.com/linuxdeepin/deepin-gettext-tools)
-- golang
-- [golang-dlib](https://github.com/linuxdeepin/go-lib)
-- qt5-default
-- qt5-qmake
-
-### Runtime dependencies
-
-- Qt5Quick
-- Qt5webkit
-- dde-qml-dbus-factory
-- [deepin-qml-widgets](https://github.com/linuxdeepin/deepin-qml-widgets)
-- gzip
-- lsb-release
-- net-tools
-- pciutils
-- pulseaudio
-- qml-module-qtquick-dialogs
-- rfkill
-- usbutils
-- x11
-- xorg-xrandr
-- xtst
-
-### Optional Dependencies
-
-- bluezutils
-- boot-info-script
-- dmidecode
-- dpkg
-- efibootmgr
-- lshw
-- modem-manager
-- network-manager
-- pacman
-- systemd
-- upstart
-- wireless-tools
 
 ## Installation
 
@@ -96,7 +55,7 @@ If you have isolated testing build environment (say a docker container), you can
 $ sudo make install
 ```
 
-Or, generate package files and install Deepin Feedback with it
+Or, generate package files and install GXDE Feedback with it
 ```
 $ debuild -uc -us ...
 $ sudo dpkg -i ../gxde-feedback-*deb
@@ -104,7 +63,7 @@ $ sudo dpkg -i ../gxde-feedback-*deb
 
 ## Usage
 
-Run Deepin Feedback with the command below
+Run GXDE Feedback with the command below
 ```
 $ gxde-feedback &
 ```
@@ -150,4 +109,4 @@ We encourage you to report issues and contribute changes
 
 ## License
 
-Deepin Feedback is licensed under [GPLv3](LICENSE).
+GXDE Feedback is licensed under [GPLv3](LICENSE).
