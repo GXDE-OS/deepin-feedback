@@ -48,4 +48,4 @@ notify-send -a "$app_name" -i $app_icon -t 5000 "$failedPrompt"
 
 version=`cat /etc/os-version | grep 'MinorVersion' | cut -d '=' -f2`
 osbuild=`cat /etc/os-version | grep 'OsBuild' | cut -d '=' -f2`
-xdg-open "https://bbs.deepin.org/feedback?name=$1&version=$version&osbuild=$osbuild&args=$*"
+xdg-open "https://bbs.spark-app.store/t/ask-for-help"
