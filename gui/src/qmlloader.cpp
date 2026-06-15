@@ -163,7 +163,7 @@ void QmlLoader::showManual()
 {
     if (m_manualPro.isNull()) {
         const QString pro = "dman";
-        const QStringList args("deepin-feedback");
+        const QStringList args("gxde-feedback");
         m_manualPro = new QProcess(this);
         connect(m_manualPro.data(), SIGNAL(finished(int)), m_manualPro.data(), SLOT(deleteLater()));
         m_manualPro->start(pro, args);

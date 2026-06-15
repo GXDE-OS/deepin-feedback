@@ -50,7 +50,7 @@ private:
 private:
     QProcess * screenShotProcess;
     QString tmpFileName = "";
-    const QString DRAFT_SAVE_PATH = QDir::homePath() + "/.cache/deepin-feedback/draft/";
+    const QString DRAFT_SAVE_PATH = QDir::homePath() + "/.cache/gxde-feedback/draft/";
     const QString UPLOAD_RECORD_FILE = DRAFT_SAVE_PATH + "uploadrecord.json";
 };
 

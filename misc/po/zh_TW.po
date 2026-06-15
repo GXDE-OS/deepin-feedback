@@ -21,8 +21,8 @@ msgstr ""
 "Language: zh_TW\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: cli/deepin-feedback-cli.sh:864
+#: cli/gxde-feedback-cli.sh:864
 msgid ""
 "Please report the bug by uploading %s as an attachment to deepin feedback: "
 "%s, so that deepin team can locate and solve the problem."
-msgstr "請透過將 %s 上傳為附件回報此臭蟲到 Deepin 意見回應：%s，這樣 Deepin 團隊才能定位並解決此問題。"
+msgstr "請透過將 %s 上傳為附件回報此臭蟲到 GXDE 意見回應：%s，這樣 GXDE 團隊才能定位並解決此問題。"

@@ -21,10 +21,10 @@ msgstr ""
 "Language: cs\n"
 "Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n <= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
 
-#: cli/deepin-feedback-cli.sh:864
+#: cli/gxde-feedback-cli.sh:864
 msgid ""
 "Please report the bug by uploading %s as an attachment to deepin feedback: "
 "%s, so that deepin team can locate and solve the problem."
 msgstr ""
 "Chybu, prosím, nahlaste společně s nahráním %s jako přílohy ke zpětné vazbě "
-"deepin feedback: %s, aby mohlo družstvo Deepinu problém najít a řešit."
+"deepin feedback: %s, aby mohlo družstvo GXDEu problém najít a řešit."

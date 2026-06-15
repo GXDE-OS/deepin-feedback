@@ -52,7 +52,7 @@
         <file>views/Widgets/Tooltip.qml</file>
         <file>views/Widgets/images/checkbox-checked-insensitive.png</file>
         <file>views/Widgets/images/checkbox-unchecked-insensitive.png</file>
-        <file>views/Widgets/images/deepin-feedback.png</file>
+        <file>views/Widgets/images/gxde-feedback.png</file>
         <file>views/Widgets/images/retry-angle.png</file>
         <file>views/Widgets/SingleLineTipCreator.js</file>
         <file>views/Widgets/SingleLineTip.qml</file>

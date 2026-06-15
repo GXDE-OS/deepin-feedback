@@ -538,7 +538,7 @@ DWindow {
                     }
                 }
                 onClicked: {
-                    //for deepin-feedback-web,not collect sys info
+                    //for gxde-feedback-web,not collect sys info
                     if (getProjectIDByName(appComboBox.text) == "none"){
                         postDataToServer()
                         return

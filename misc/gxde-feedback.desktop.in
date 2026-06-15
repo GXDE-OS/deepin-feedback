@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=GXDE User Feedback
+Comment=Feedback tools for GXDE users.
+Exec=gxde-feedback
+Path=/tmp
+Icon=gxde-feedback
+GenericName=User Feedback
+X-GXDE-Vendor=deepin

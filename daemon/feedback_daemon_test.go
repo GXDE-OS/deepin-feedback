@@ -23,8 +23,8 @@ func Test(t *testing.T) { C.TestingT(t) }
 type testWrapper struct{}
 
 func init() {
-	// override deepin-feedback-cli
-	deepinFeedbackCliExe = "../cli/deepin-feedback-cli.sh"
+	// override gxde-feedback-cli
+	deepinFeedbackCliExe = "../cli/gxde-feedback-cli.sh"
 	C.Suite(&testWrapper{})
 }
 

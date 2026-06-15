@@ -24,7 +24,7 @@ var dbusDaemon, _ = dbusOrigIfc.NewDBusDaemon("org.freedesktop.DBus", "/org/free
 
 func main() {
 	InitI18n()
-	Textdomain("deepin-feedback")
+	Textdomain("gxde-feedback")
 	initCategories()
 
 	if !lib.UniqueOnSystem(dbusDest) {

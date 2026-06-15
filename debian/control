@@ -1,7 +1,7 @@
-Source: deepin-feedback
+Source: gxde-feedback
 Section: utils
 Priority: optional
-Maintainer: Deepin Sysdev <sysdev@deepin.com>
+Maintainer: gfdgd xi <3025613752@qq.com>
 Build-Depends: debhelper (>= 9),
  golang | golang-go,
  pkg-config,
@@ -10,8 +10,11 @@ Build-Depends: debhelper (>= 9),
  deepin-gettext-tools
 Standards-Version: 3.9.5
 
-Package: deepin-feedback
+Package: gxde-feedback
 Architecture: any
+Conflicts: deepin-feedback
+Provides: deepin-feedback
+Replaces: deepin-feedback
 Depends: ${shlibs:Depends}, ${misc:Depends},
  rfkill, lshw,
  wireless-tools, gzip,

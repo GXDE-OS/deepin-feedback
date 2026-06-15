@@ -1,4 +1,4 @@
-# 深度用户反馈|../common/deepin-feedback.svg|
+# 深度用户反馈|../common/gxde-feedback.svg|
 
 ## 概述|../common/icon_overview.svg|
 

@@ -8,7 +8,7 @@ kernel version, syslog, configurations, etc. Then upload the report to
 Deepin's issue tracking site and that's it.
 
 Deepin Feedback also provide a command line tool named
-`deepin-feedback-cli`, which in fact used as the information
+`gxde-feedback-cli`, which in fact used as the information
 collecting back-end. For advanced usage, run it under the terminal.
 
 ## Dependencies
@@ -99,37 +99,37 @@ $ sudo make install
 Or, generate package files and install Deepin Feedback with it
 ```
 $ debuild -uc -us ...
-$ sudo dpkg -i ../deepin-feedback-*deb
+$ sudo dpkg -i ../gxde-feedback-*deb
 ```
 
 ## Usage
 
 Run Deepin Feedback with the command below
 ```
-$ deepin-feedback &
+$ gxde-feedback &
 ```
 
 Collect all system information manually and save to archive file in
 current directory
 ```
-sudo deepin-feedback-cli
-sudo deepin-feedback-cli all
+sudo gxde-feedback-cli
+sudo gxde-feedback-cli all
 ```
 
 Collect information without personal data
 ```
-sudo deepin-feedback-cli --username $USER --privacy-mode
+sudo gxde-feedback-cli --username $USER --privacy-mode
 ```
 
 Only collect network related information
 ```
-sudo deepin-feedback-cli network
+sudo gxde-feedback-cli network
 ```
 
 Print current network information
 
 ```
-sudo deepin-feedback-cli --dump network
+sudo gxde-feedback-cli --dump network
 ```
 
 ## Getting help

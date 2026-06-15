@@ -91,7 +91,7 @@ void AdjunctAide::removeSysAdjuncts(const QString &dirName)
     infoList = tmpDir.entryInfoList(QDir::Files | QDir::NoDotAndDotDot ,QDir::Name);
     for (int i = 0; i < infoList.count(); i++)
     {
-        if (infoList.at(i).fileName().startsWith("deepin-feedback-results"))
+        if (infoList.at(i).fileName().startsWith("gxde-feedback-results"))
         {
             QString tmpPath = infoList.at(i).filePath();
             QFile::remove(tmpPath);

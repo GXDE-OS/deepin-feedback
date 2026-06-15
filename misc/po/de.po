@@ -21,11 +21,11 @@ msgstr ""
 "Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: cli/deepin-feedback-cli.sh:864
+#: cli/gxde-feedback-cli.sh:864
 msgid ""
 "Please report the bug by uploading %s as an attachment to deepin feedback: "
 "%s, so that deepin team can locate and solve the problem."
 msgstr ""
-"Bitte melden Sie den Fehler, indem Sie %s als Anhang dem Deepin Feedback "
-"hinzufügen: %s, damit das Deepin-Team das Problem eingrenzen und beheben "
+"Bitte melden Sie den Fehler, indem Sie %s als Anhang dem GXDE Feedback "
+"hinzufügen: %s, damit das GXDE-Team das Problem eingrenzen und beheben "
 "kann."

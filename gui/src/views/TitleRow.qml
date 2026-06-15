@@ -19,7 +19,7 @@ Item {
         height: 16
         anchors.left: parent.left
         anchors.top: parent.top
-        source: "qrc:///views/Widgets/images/deepin-feedback.png"
+        source: "qrc:///views/Widgets/images/gxde-feedback.png"
     }
 
     Text {

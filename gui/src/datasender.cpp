@@ -97,7 +97,7 @@ quint32 DataSender::showNotification(const QString &title, const QString &msg, c
     QDBusMessage ret = notifyInterface->call(QDBus::AutoDetect,"Notify",
                       "Deepin Feedback",
                       uint(0),
-                      "deepin-feedback",
+                      "gxde-feedback",
                       title,
                       msg,
                       actions,

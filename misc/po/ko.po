@@ -21,9 +21,9 @@ msgstr ""
 "Language: ko\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: cli/deepin-feedback-cli.sh:864
+#: cli/gxde-feedback-cli.sh:864
 msgid ""
 "Please report the bug by uploading %s as an attachment to deepin feedback: "
 "%s, so that deepin team can locate and solve the problem."
 msgstr ""
-"의견을 보내실 때 %s를 첨부 파일로 업로드하여 버그를 신고하십시오: %s, Deepin 팀이 문제를 찾아서 해결할 수 있습니다."
+"의견을 보내실 때 %s를 첨부 파일로 업로드하여 버그를 신고하십시오: %s, GXDE 팀이 문제를 찾아서 해결할 수 있습니다."

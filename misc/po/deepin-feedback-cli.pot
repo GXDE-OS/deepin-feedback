@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: \n"
 
-#: cli/deepin-feedback-cli.sh:867
+#: cli/gxde-feedback-cli.sh:867
 msgid ""
 "Please report the bug by uploading %s as an attachment to deepin feedback: "
 "%s, so that deepin team can locate and solve the problem."
@@ -25,30 +25,30 @@ msgstr ""
 "Please report the bug by uploading %s as an attachment to deepin feedback: "
 "%s, so that deepin team can locate and solve the problem."
 
-#: deepin-feedback:17
-msgid "Deepin User Feedback"
-msgstr "Deepin User Feedback"
+#: gxde-feedback:17
+msgid "GXDE User Feedback"
+msgstr "GXDE User Feedback"
 
-#: deepin-feedback:20
+#: gxde-feedback:20
 msgid "Please give permission to collect logs"
 msgstr "Please give permission to collect logs"
 
-#: deepin-feedback:21
+#: gxde-feedback:21
 msgid "Collecting logs..."
 msgstr "Collecting logs..."
 
-#: deepin-feedback:22
+#: gxde-feedback:22
 msgid "It may take several minutes"
 msgstr "It may take several minutes"
 
-#: deepin-feedback:23
+#: gxde-feedback:23
 msgid "Logs collected"
 msgstr "Logs collected"
 
-#: deepin-feedback:24
+#: gxde-feedback:24
 msgid "File path: %s"
 msgstr "File path: %s"
 
-#: deepin-feedback:25
+#: gxde-feedback:25
 msgid "Log collection failed"
 msgstr "Log collection failed"

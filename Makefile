@@ -11,48 +11,48 @@ LANGUAGES = $(basename $(notdir $(wildcard misc/po/*.po)))
 
 all: build
 
-build/locale/%/LC_MESSAGES/deepin-feedback.mo:misc/po/%.po
+build/locale/%/LC_MESSAGES/gxde-feedback.mo:misc/po/%.po
 	mkdir -p $(@D)
 	msgfmt -o $@ $<
 
-translate: $(addsuffix /LC_MESSAGES/deepin-feedback.mo, $(addprefix build/locale/, ${LANGUAGES}))
+translate: $(addsuffix /LC_MESSAGES/gxde-feedback.mo, $(addprefix build/locale/, ${LANGUAGES}))
 
 build: check translate
 	mkdir -p build
 	(cd cli; go build -o ../build/feedbackserver feedbackserver.go)
-	deepin-policy-ts-convert ts2policy misc/com.deepin.deepin-feedback.policy.in misc/ts/com.deepin.deepin-feedback.policy build/com.deepin.deepin-feedback.policy
-	deepin-desktop-ts-convert ts2desktop misc/deepin-feedback.desktop.in misc/ts/deepin-feedback.desktop build/deepin-feedback.desktop
+	deepin-policy-ts-convert ts2policy misc/com.deepin.gxde-feedback.policy.in misc/ts/com.deepin.gxde-feedback.policy build/com.deepin.gxde-feedback.policy
+	deepin-desktop-ts-convert ts2desktop misc/gxde-feedback.desktop.in misc/ts/gxde-feedback.desktop build/gxde-feedback.desktop
 
 ts:
-	deepin-policy-ts-convert policy2ts misc/com.deepin.deepin-feedback.policy.in misc/ts/com.deepin.deepin-feedback.policy
-	deepin-desktop-ts-convert desktop2ts misc/deepin-feedback.desktop.in misc/ts/deepin-feedback.desktop
+	deepin-policy-ts-convert policy2ts misc/com.deepin.gxde-feedback.policy.in misc/ts/com.deepin.gxde-feedback.policy
+	deepin-desktop-ts-convert desktop2ts misc/gxde-feedback.desktop.in misc/ts/gxde-feedback.desktop
 
 pot:
-	xgettext -LShell --from-code UTF-8 --keyword=gettext -o misc/po/deepin-feedback-cli.pot cli/deepin-feedback-cli.sh deepin-feedback
+	xgettext -LShell --from-code UTF-8 --keyword=gettext -o misc/po/gxde-feedback-cli.pot cli/gxde-feedback-cli.sh gxde-feedback
 
 install:
 	install -dm0755 ${DESTDIR}${PREFIX}/bin/
-	mkdir -p ${DESTDIR}/var/lib/deepin-feedback/
-	cp -rf feedback_logpath.json ${DESTDIR}/var/lib/deepin-feedback/feedback_logpath.json
-	install -m0755 cli/deepin-feedback-cli.sh ${DESTDIR}${PREFIX}/bin/deepin-feedback-cli
+	mkdir -p ${DESTDIR}/var/lib/gxde-feedback/
+	cp -rf feedback_logpath.json ${DESTDIR}/var/lib/gxde-feedback/feedback_logpath.json
+	install -m0755 cli/gxde-feedback-cli.sh ${DESTDIR}${PREFIX}/bin/gxde-feedback-cli
 	install -m0755 build/feedbackserver ${DESTDIR}${PREFIX}/bin/
-	install -m0755 deepin-feedback ${DESTDIR}${PREFIX}/bin/
+	install -m0755 gxde-feedback ${DESTDIR}${PREFIX}/bin/
 	install -dm0755 ${DESTDIR}${PREFIX}/share/applications
-	install -m0755 build/deepin-feedback.desktop ${DESTDIR}${PREFIX}/share/applications/
+	install -m0755 build/gxde-feedback.desktop ${DESTDIR}${PREFIX}/share/applications/
 	cp -rf misc/icons ${DESTDIR}${PREFIX}/share/
 	install -dm0755 ${DESTDIR}${PREFIX}/share/polkit-1/actions/
-	install -m0644 build/com.deepin.deepin-feedback.policy ${DESTDIR}${PREFIX}/share/polkit-1/actions/
+	install -m0644 build/com.deepin.gxde-feedback.policy ${DESTDIR}${PREFIX}/share/polkit-1/actions/
 	install -dm0755 ${DESTDIR}${PREFIX}/share/locale/
 	cp -r build/locale/* ${DESTDIR}${PREFIX}/share/locale
 
 uninstall:
-	rm -f ${DESTDIR}${PREFIX}/bin/deepin-feedback-cli
-	rm -f /var/lib/deepin-feedback/feedback_logpath.json
-	rm -f ${DESTDIR}${PREFIX}/share/applications/deepin-feedback.desktop
-	rm -f ${DESTDIR}${PREFIX}/share/icons/hicolor/scalable/apps/deepin-feedback.svg
+	rm -f ${DESTDIR}${PREFIX}/bin/gxde-feedback-cli
+	rm -f /var/lib/gxde-feedback/feedback_logpath.json
+	rm -f ${DESTDIR}${PREFIX}/share/applications/gxde-feedback.desktop
+	rm -f ${DESTDIR}${PREFIX}/share/icons/hicolor/scalable/apps/gxde-feedback.svg
 
 check:
-	bash --norc -n -- cli/deepin-feedback-cli.sh
+	bash --norc -n -- cli/gxde-feedback-cli.sh
 
 clean:
 	$(RM) -r build

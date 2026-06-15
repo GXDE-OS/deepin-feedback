@@ -1,5 +1,5 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: deepin-feedback
+Upstream-Name: gxde-feedback
 
 Files: *
 Copyright: 2014 xufasheng  <fasheng.xu@gmail.com>

@@ -90,7 +90,7 @@ QtObject {
     property var mainWindow: MainWindow {}
     property var dbusSearch: Search {}
     property var dsslocale: DLocale {
-        domain: "deepin-feedback"
+        domain: "gxde-feedback"
 
         Component.onCompleted: {
             console.log ("Language:", dsslocale.lang)

@@ -31,7 +31,7 @@ var (
 	dbusDest             = "com.deepin.Feedback"
 	dbusObjectPath       = "/com/deepin/Feedback"
 	dbusInterface        = "com.deepin.Feedback"
-	deepinFeedbackCliExe = "/usr/bin/deepin-feedback-cli"
+	deepinFeedbackCliExe = "/usr/bin/gxde-feedback-cli"
 )
 
 type category struct {
@@ -148,7 +148,7 @@ func (fd *FeedbackDaemon) GenerateReport(dmsg dbus.DMessage, category string, al
 	distroName, distroRelease, _ := fd.GetDistroInfo()
 	dateFormat := time.Now().Format("20060102-15:04:05")
 	dateFormat = strings.Replace(dateFormat, ":", "", -1)
-	outputFilename := fmt.Sprintf("deepin-feedback-%s-%s-%s-%s.tar.gz", distroName, distroRelease, category, dateFormat)
+	outputFilename := fmt.Sprintf("gxde-feedback-%s-%s-%s-%s.tar.gz", distroName, distroRelease, category, dateFormat)
 	outputFilepath := filepath.Join(os.TempDir(), outputFilename)
 	args := []string{"--username", username, "--output", outputFilepath, category}
 	if !allowPrivacy {

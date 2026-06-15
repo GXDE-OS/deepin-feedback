@@ -1,4 +1,4 @@
-# Deepin User Feedback|../common/deepin-feedback.svg|
+# Deepin User Feedback|../common/gxde-feedback.svg|
 
 ## Overview|../common/icon_overview.svg|
 

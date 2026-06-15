@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 
     QApplication app(argc, argv);
     app.setOrganizationName("deepin");
-    app.setApplicationName("deepin-feedback");
+    app.setApplicationName("gxde-feedback");
 
     //Add command line option
     QCommandLineParser parser;
@@ -74,7 +74,7 @@ int main(int argc, char *argv[])
         iface.call("switchProject", reportTarget);
     }
     else {
-        qWarning() << "deepin-feedback is running...";
+        qWarning() << "gxde-feedback is running...";
     }
 
     return 0;
