@@ -1,8 +1,9 @@
-gxde-feedback (6.0.0) UNRELEASED; urgency=medium
+gxde-feedback (6.0.1) UNRELEASED; urgency=medium
 
   * 调整项目名称
+  * 修改提示网址消除歧义
 
- -- gfdgd_xi <3025613752@qq.com>  Mon, 15 Jun 2026 12:25:33 +0800
+ -- gfdgd_xi <3025613752@qq.com>  Fri, 19 Jun 2026 21:26:21 +0800
 
 gxde-feedback (6.0.0) unstable; urgency=medium
 
