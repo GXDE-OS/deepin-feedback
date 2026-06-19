@@ -865,7 +865,7 @@ if [ "${arg_category}" ]; then
 
     export TEXTDOMAIN=gxde-feedback
     uploadPrompt=$(gettext "Please report the bug by uploading %s as an attachment to deepin feedback: %s, so that deepin team can locate and solve the problem.")
-    uploadPrompt=$(printf "$uploadPrompt\n" $(pwd)/$result_archive "http://feedback.deepin.org/feedback")
+    uploadPrompt=$(printf "$uploadPrompt\n" $(pwd)/$result_archive "https://bbs.spark-app.store/t/ask-for-help")
     msg "$uploadPrompt"
 
     exit
